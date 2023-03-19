@@ -127,7 +127,7 @@ if ( ! class_exists( 'WPJAE_Job_Views_Export_CSV_Form', false ) ) {
                     }
                 }
 
-                $locations_array = get_user_meta( 387, 'jr_alert_meta_location', true );
+                $locations_array = get_user_meta( $alert->user_id, 'jr_alert_meta_location', true );
 
                 if($locations_array) {
                     foreach ($locations_array as $location) {
